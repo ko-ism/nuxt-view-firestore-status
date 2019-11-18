@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-view-firestore-status",
+  "version": "1.0.0",
+  "description": "My impeccable Nuxt.js project",
+  "author": "shinya koizumi",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "firebase": "^7.4.0",
+    "moment": "^2.24.0",
+    "nuxt": "^2.0.0",
+    "vuexfire": "^3.2.0"
+  },
+  "devDependencies": {}
+}
