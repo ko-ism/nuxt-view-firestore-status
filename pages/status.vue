@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <button v-on:click="popup">更新通知ON</button>
+    </div>
     <!-- <div>{{view_status}}</div> -->
     <!-- <ul>
         <li v-for="status in view_status" :key="status.id">
@@ -56,6 +59,7 @@
       data: function(){
           return {
               session_id: '',
+              url: '',
               done: false
           }
 
@@ -69,6 +73,9 @@
           },
           toggle(status){
               this.$store.dispatch('view_status/toggle', status)
+          },
+          popup(){
+              this.$store.dispatch('view_status/popup')
           }
       },
       computed: {
