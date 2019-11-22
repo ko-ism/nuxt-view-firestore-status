@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div>
+    <!-- <div>
       <button v-on:click="popup">更新通知ON</button>
-    </div>
+    </div> -->
     <!-- <div>{{view_status}}</div> -->
     <!-- <ul>
         <li v-for="status in view_status" :key="status.id">
@@ -66,6 +66,7 @@
       },
       created: function(){
           this.$store.dispatch('view_status/init')
+          this.$store.dispatch('view_status/popup')
       },
       methods: {
           remove(id){
@@ -74,14 +75,14 @@
           toggle(status){
               this.$store.dispatch('view_status/toggle', status)
           },
-          popup(){
-              this.$store.dispatch('view_status/popup')
-          }
+          // popup(){
+          //     this.$store.dispatch('view_status/popup')
+          // }
       },
       computed: {
           view_status(){
-              return this.$store.state.view_status.statuses
-            // return this.$store.getters['view_status/orderedStatus']
+            // return this.$store.state.view_status.statuses
+            return this.$store.getters['view_status/orderedStatus']
           }
       },
       filters: {

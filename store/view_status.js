@@ -37,8 +37,8 @@ export const actions = {
   })
 }
 
-// export const getters = {
-//   orderedStatus: state => {
-//     return _.sortBy(state.statuses, 'timestamp')
-//   }
-// }
+export const getters = {
+  orderedStatus: state => {
+    return _.orderBy(state.statuses, 'timestamp', 'desc')
+  }
+}
