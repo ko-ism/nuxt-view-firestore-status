@@ -1,28 +1,25 @@
 <template>
 
-    <!-- <div>
-        {{ $data }}
-    </div> -->
     <div>
-    <h2>
+      <h2>
         Bitcoin Price
-    </h2>
-    <section v-if=hasError>
+      </h2>
+      <section v-if=hasError>
         Error
-    </section>
-    <section v-else>
+      </section>
+      <section v-else>
         <div v-if=loading>
-        Loading...
+          Loading...
         </div>
         <div v-else>
 
-        <ul v-cloak>
+          <ul v-cloak>
             <li v-for="(rate,currency) in bpi">
-            {{currency}} : {{rate.rate_float | currencyDecimal }}
+              {{currency}} : {{rate.rate_float | currencyDecimal }}
             </li>
-        </ul>
+          </ul>
         </div>
-    </section>
+      </section>
     </div>
 
 </template>
