@@ -1,6 +1,6 @@
 # nuxt-view-firestore-status
 
-> My impeccable Nuxt.js project
+> Firestoreのデータベースにあるデータを常に表示し続け、更新（追加、更新、削除）があった際ポップアップアラートを出すNuxtアプリ
 
 ## Build Setup
 
