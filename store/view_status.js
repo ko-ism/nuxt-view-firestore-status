@@ -2,7 +2,7 @@ import firebase from '~/plugins/firebase'
 import { firestoreAction } from 'vuexfire'
 
 const db = firebase.firestore()
-const statusRef = db.collection('status-database')
+const statusRef = db.collection(process.env.FIRESTORE_COLLECTION_NAME)
 
 export const state = () => ({
   statuses: []

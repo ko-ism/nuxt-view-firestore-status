@@ -1,6 +1,5 @@
 <template>
   <div>
-    2019/11/28 Demo
     <table>
       <tr>
         <th>-</th>
