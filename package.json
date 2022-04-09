@@ -14,7 +14,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "axios": "^0.21.1",
     "firebase": "^7.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "nuxt": "^2.0.0",
     "vuexfire": "^3.2.0"
   },
